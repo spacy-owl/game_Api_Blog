@@ -1,0 +1,31 @@
+.profile {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    max-width: 200px;
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: antiquewhite;
+    margin: auto;
+  }
+  
+  .image img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .emp {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 24px 0 0 0;
+  }
+  
+  

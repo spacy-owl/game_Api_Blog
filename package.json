@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "remove": "rm -rf node_modules/.cache && rm -rf build/",
+    "serve": "npm run remove && npm run open && next dev",
+    "start": "npm run remove && next build && npm run open && next start",
+    "build": "npm run remove && next build",
+    "backupgit": "mv ../io/.git ../backup",
+    "restoregit": "mv ../backup/.git ../io",
+    "open": "start http://localhost:3000",
+    "export": "npm run backupgit && npm run remove && next build && next export -o ../io/ && touch ../io/.nojekyll && npm run restoregit && cd ../io && git add ."
   },
   "dependencies": {
     "react": "^18",

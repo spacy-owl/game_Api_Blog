@@ -1,0 +1,16 @@
+.li {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.li span {
+    font-size: small;
+    position: absolute;
+    top: 9%;
+    left: 80%;
+}
